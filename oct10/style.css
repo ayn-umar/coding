@@ -1,0 +1,204 @@
+/* General Reset & Font Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 1. Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* 2. Banner Styles */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* 3. Portfolio Section */
+.portfolio-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* 4. Social Media Section (Matching your design screenshot) */
+.social-section {
+    background-color: #191b31; /* Deep navy theme from screenshot */
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.social-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-subtitle {
+    color: #ffcc00;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-section h2 {
+    font-size: 2.2rem;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #7c83a6;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.social-btn i {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Specific styling for the Email button highlight in screenshot */
+.social-btn.email {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    border-color: #ffcc00;
+    font-weight: bold;
+}
+
+.social-btn.email i {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.social-btn:hover {
+    opacity: 0.85;
+}
+
+/* 5. Footer Section (Matching step 3 in instructions) */
+footer {
+    background-color: #121212;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer strong {
+    color: #ffcc00;
+}

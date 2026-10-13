@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Study Progress Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body { background-color: #f4f7ff; font-family: Arial, sans-serif; }
+    .jumbotron { background-color: #e8edff; border-left: 6px solid #FF5A43; }
+    .jumbotron h1 { color: #FF5A43; }
+    .section-title { color: #FF5A43; margin-top: 30px; margin-bottom: 15px; }
+    p { font-weight: bold; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Study Progress Dashboard</h1>
+      
+
+      
+      <button class="btn btn-success">Math</button>
+      <button class="btn btn-danger">Computer</button>
+      <button class="btn btn-primary">English</button>
+      <button class="btn btn-warning">Physics</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+   
+    <h2 class="section-title">Lessons Completed <span class="badge badge-danger">15</span></h2>
+
+    <p>Math <span class="badge badge-success">4 lessons</span></p>
+    <p>Computer <span class="badge badge-danger">3 lessons</span></p>
+    <p>English <span class="badge badge-primary">3 lessons</span></p>
+    <p>Physics <span class="badge badge-warning">5 lessons</span></p>
+    <h2 class="section-title">Subject Progress</h2>
+
+    <p>Math</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 96%">96%</div>
+    </div>
+
+    <p>Computer</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-danger" style="width: 69%">69%</div>
+    </div>
+
+    <p>English</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-primary" style="width: 75%">75%</div>
+    </div>
+
+    <p>Physics</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-warning" style="width: 78%">78%</div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
